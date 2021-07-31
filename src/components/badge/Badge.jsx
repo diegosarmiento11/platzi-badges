@@ -1,6 +1,6 @@
 import React from 'react';
-import confLogo from "../assets/images/badge-header.svg";
-import profilePic from "../assets/images/profilepic.jpeg";
+import confLogo from "../../assets/images/badge-header.svg";
+import profilePic from "../../assets/images/profilepic.jpeg"
 import './Badge.css';
 
 class Badge extends React.Component {
@@ -17,13 +17,14 @@ class Badge extends React.Component {
           src={profilePic} 
           alt="Avatar" />
           <h1>
-            Diego <br /> Sarmiento
+            {this.props.firstName} <br /> 
+            {this.props.lastName}
           </h1>
         </div>
 
         <div className="Badge__section-info">
-          <h3>Frontend Engineer</h3>
-          <div>@diegolegaltech</div>
+          <h3>{this.props.jobTitle}</h3>
+          <div>@{this.props.twitter}</div>
         </div>
 
         <div className="Badge__footer">#platziconf</div>
