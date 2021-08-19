@@ -1,6 +1,7 @@
 import React from 'react';
 import "./BadgeNew.css";
-import Badge from "../../components/badge/Badge";
+import Badge from "../../components/badge/Badge.jsx";
+import BadgeForm from "../../components/badgeForm/BadgeForm.jsx";
 import Navbar from "../../components/navbar/Navbar.jsx";
 import header from "../../assets/images/badge-header.svg";
 
@@ -14,7 +15,7 @@ class BadgeNew extends React.Component {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-6">
               <Badge
                 firstName="Diego"
                 lastName="Sarmiento"
@@ -22,8 +23,12 @@ class BadgeNew extends React.Component {
                 twitter="diegolegaltech"
               />
             </div>
+            <div className="col-6">
+              <BadgeForm/>
+            </div>
           </div>
         </div>
+
       </>
     );
   }
