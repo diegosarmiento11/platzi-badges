@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import BadgeNew from "./pages/badgeNew/BadgeNew.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./global.css";
 
 const container = document.getElementById('app');
 
-const element = <h1>Holi, Platzi Badges</h1>;
-ReactDOM.render(element, container);
+ReactDOM.render(
+  <div>
+  <BadgeNew/>
+  </div>
+  ,container);
