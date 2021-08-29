@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Badges from "./pages/badges/Badges.jsx";
+import App from "./components/app/App";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./global.css";
 
@@ -8,6 +8,6 @@ const container = document.getElementById('app');
 
 ReactDOM.render(
   <div>
-    <Badges/>
+    <App/>
   </div>
   ,container);
