@@ -1,5 +1,6 @@
 import React from 'react';
 import './BadgesList.css';
+import Twitter from "../../assets/images/twitter.png";
 
 class BadgesList extends React.Component {
   render() {
@@ -9,7 +10,20 @@ class BadgesList extends React.Component {
             {this.props.Badges.map((badge) => {
             	return (
                 <li className="BadgesListItem" key={badge.id}>
-                  <p className="BadgesListItem__avatar">{badge.firstName} {badge.lastName}</p>
+                  <img className="BadgesListItem__avatar" src={badge.avatarUrl} alt="Avatar" />
+                  <div className="BadgesData__container">
+                    <p className="Badges__p">
+                      <strong>
+                        {badge.firstName} &nbsp;
+                        {badge.lastName}
+                      </strong>
+                    </p>
+                    <div className="Badges__twitter">
+                      <img className="Bagdes__image" src={Twitter} alt="Twitter icon" />
+                      <p className="Badges__p">@{badge.twitter}</p>
+                    </div>
+                    <p className="Badges__p">{badge.jobTitle}</p>
+                  </div>
                 </li>
               )
             })}
