@@ -3,6 +3,7 @@ import "./Badges.css";
 import Navbar from "../../components/navbar/Navbar";
 import ConfLogo from "../../assets/images/badge-header.svg";
 import BadgesList from "../../components/badgesList/BadgesList";
+import { Link } from 'react-router-dom';
 
 class Badges extends React.Component {
   state = {
@@ -52,9 +53,9 @@ class Badges extends React.Component {
 
         <div className="Badges__container">
           <div className="Badges__buttons">
-            <a className="btn btn-primary" href="/">
+            <Link to="/badges/new" className="btn btn-primary" >
               Badge New
-            </a>
+            </Link>
           </div>
         </div>
 
