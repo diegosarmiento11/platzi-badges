@@ -5,7 +5,7 @@ import Twitter from "../../assets/images/twitter.png";
 class BadgesList extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <ul className="list-unstyled BadgesList">
             {this.props.Badges.map((badge) => {
             	return (
@@ -28,9 +28,10 @@ class BadgesList extends React.Component {
               )
             })}
           </ul>
-      </div>
+      </>
     );
   }
 }   
 
 export default BadgesList;
+

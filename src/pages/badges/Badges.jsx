@@ -1,9 +1,10 @@
 import React from 'react';
-import "./Badges.css";
-import Navbar from "../../components/navbar/Navbar";
+import { Link } from 'react-router-dom';
+
 import ConfLogo from "../../assets/images/badge-header.svg";
 import BadgesList from "../../components/badgesList/BadgesList";
-import { Link } from 'react-router-dom';
+
+import "./Badges.css";
 
 class Badges extends React.Component {
   state = {
@@ -40,9 +41,7 @@ class Badges extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar/>
-
+      <>
         <div className="Badges">
           <div className="Badges__hero">
             <div className="Badges__container">
@@ -67,7 +66,7 @@ class Badges extends React.Component {
           </div>
         </div>
 
-      </div>
+      </>
     );
   }
 }
