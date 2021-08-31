@@ -1,6 +1,8 @@
 import React from 'react';
+
 import confLogo from "../../assets/images/badge-header.svg";
 import profilePic from "../../assets/images/profilepic.jpeg"
+
 import './Badge.css';
 
 class Badge extends React.Component {
@@ -34,4 +36,3 @@ class Badge extends React.Component {
 }
 
 export default Badge;
-

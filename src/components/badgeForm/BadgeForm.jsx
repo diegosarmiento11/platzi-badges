@@ -1,4 +1,5 @@
 import React from 'react';
+
 import "./BadgeForm.css";
 
 class BadgeForm extends React.Component {
@@ -13,7 +14,7 @@ class BadgeForm extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<>
 				<h1>New Attendant</h1>
 				<form onSubmit={this.handleSubmit}>
 					<div className="form-group">
@@ -60,10 +61,10 @@ class BadgeForm extends React.Component {
 						Save
 					</button>
 				</form>
-			</div>
+			</>
 		)
 	}
 }
 
-
 export default BadgeForm;
+

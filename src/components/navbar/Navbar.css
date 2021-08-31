@@ -12,7 +12,6 @@
 
 .Navbar__brand:hover {
   color: #ffffff;
-  text-decoration: none;
 }
 
 .Navbar__brand-logo {
@@ -22,7 +21,6 @@
 .First-span {
   font-weight: light;
   color: white;
-  text-decoration:none !important;
 }
 .Second-span {
   font-weight: bold;
