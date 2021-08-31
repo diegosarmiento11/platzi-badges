@@ -1,9 +1,15 @@
 import React from 'react';
 
+import './Error404.css';
+
+import NotFound from '../../assets/images/notfound.png';
+
 function Error404 () {
-    return (
-        <h1>Error 404</h1>
-    )
+	return (
+		<>
+			<img className="notfound" src={NotFound} alt="" />
+		</>
+	)
 }
 
 export default Error404;
